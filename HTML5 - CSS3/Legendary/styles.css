@@ -1,0 +1,191 @@
+* {box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: #EFE784;
+}
+
+.intro {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #3E3838 ;
+    padding-bottom: 50px;
+}
+
+.head {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.logohead {
+    width: 600px;
+    position: absolute;
+    bottom: 70%;
+    left: 35%;
+}
+
+@font-face {
+    font-family: Roboto-thin;
+    src: url(fonts/Roboto-Thin.ttf);
+}
+
+h1 {
+    width: 600px;
+    position: absolute;
+    bottom: 60%;
+    left: 38%;
+    color: #EFE784;
+    font-family: Roboto-thin, sans-serif;
+    letter-spacing: 40px;
+}
+
+h2 {
+    display: block;
+    width: 160px ;
+    bottom: 60%;
+    left: 35%;
+    color: #EFE784;
+    font-family: Roboto-thin, sans-serif;
+    font-size: 20pt;
+    letter-spacing: 20px;
+    margin-top: 50px;
+    margin-left: 650px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 360;
+    border-top: solid 1px #EFE784;
+    border-bottom: solid 1px #EFE784;
+    text-align: center
+}
+
+@font-face {
+    font-family: Roboto-light;
+    src: url(fonts/Roboto-Light.ttf);
+}
+
+.pintro {font-family: Roboto-light;
+    color: #EFE784;
+    text-align: center;
+    font-size: 17pt;
+    padding-top: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+h3 {font-family: Roboto-light;
+    color: #6CBCB3;
+    padding-top: 50px;
+    font-size: 30pt;
+    padding-bottom: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.avengers {
+    background-color: #ffffff;
+    width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    color: #1E1E1E;
+    
+}
+
+.text{
+    font-size: 15pt;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+    font-family: Roboto-light;
+    line-height: 35px;
+}
+
+.imag{
+    width: 1500px;
+    padding-bottom: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+@font-face {
+    font-family: roboto-regular ;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+.legendav {
+    font-family: Roboto-regular;
+    color: #6CBCB3;
+    padding-bottom: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+    line-height: 25px;
+}
+
+.star {
+    background-color: #6CBCB3;
+    width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.legendG {
+    font-family: Roboto-regular;
+    color: #ffffff;
+    padding-bottom: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+    line-height: 25px;
+}
+
+h4 {
+    font-family: Roboto-light;
+    color: #1E1E1E;
+    padding-top: 50px;
+    font-size: 30pt;
+    padding-bottom: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+
+.woman {
+    background-color: #3E3838;
+    width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    color: #ffffff;
+}
+
+h5 {
+    font-family: Roboto-light;
+    color: #ffffff;
+    padding-top: 50px;
+    font-size: 30pt;
+    padding-bottom: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+footer {
+        background-color: #000000;
+        width: 1440px;
+        margin: 0 auto;
+        padding-left: 100px;
+        padding-top: 50px;
+        padding-bottom: 80px;
+}
+
+span {
+    color: #EFE784;
+}
+
+.foot {
+    padding-top: 20px;
+    color: #ffffff;
+    font-family: Roboto-light;
+    line-height: 22px;
+}
