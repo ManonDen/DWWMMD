@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body {
+    background-color: #3B4A51;
+   }
+
+div {
+    background-color: #FAF4D4ff;
+    margin: 0 auto ;
+    width: 1440px;
+    padding-bottom: 50px;
+}
+
+.tete{width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 40px
+}
+
+.teteimg {width: 1440px;
+    margin: 0 auto;
+}
+
+
+.entete{
+    margin: 0 auto ;
+    width: 1440px;
+    margin-left: 100px;
+}
+
+@font-face {
+    font-family: Roboto-light;
+    src: url(fonts/Roboto-Light.ttf);
+    font-size: 30px;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto-regular;
+    src: url(fonts/Roboto-Regular.ttf);
+    font-size: 30px;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto-medium-i, serif;
+    src: url(fonts/Roboto-Medium.ttf);
+    font-size: 30px;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto-black;
+    src: url(fonts/Roboto-Black.ttf);
+    font-size: 30px;
+    font-style: normal;
+}
+
+h1 {
+    color: #ECCA90;
+    font-family: Roboto-light, sans-serif;
+    font-style: normal;
+    font-size: 30px ;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+.logo {
+    padding-bottom: 45px;
+}
+
+p {display: block;
+    margin-left: 200px ;
+    font-family: Roboto-regular, sans-serif;
+    font-size: 26px;
+    line-height: 45px;
+    margin-right: 225px;
+}
+
+.evidence {
+    display: block;
+    margin-left: 200px ;
+    font-family: Roboto-regular, sans-serif;
+    font-size: 33px;
+    font-weight: bold;
+    color: #8AA78B ;
+    margin-right: 225px;
+}
+
+p2 {
+    display: block;
+    margin-left: 200px ;
+    font-family: Roboto-regular, sans-serif;
+    font-size: 26px;
+    color: #8AA78B ;
+    margin-right: 225px;
+}
+
+.sous-para {
+    border-left: solid 2px #8AA78B;
+    font-family: Roboto-medium-i, serif;
+    font-style: italic;
+    color: #595843 ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    margin-right: 100px;
+    margin-left: 130px;
+    padding-left: 40px;
+}
+
+h2 {
+    color: #8AA78B;
+    font-family: Roboto-regular, sans-serif;
+    font-style: normal;
+    font-size: 30px ;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-left: 130px;
+}
+
+.img {
+    width: 1240px;
+    padding-top: 100px;
+    padding-left: 140px;
+    padding-bottom: 50px;
+}
+
+ul{
+    display: block;
+    margin-left: 200px ;
+    font-family: Roboto-black, sans-serif;
+    font-size: 26px;
+    line-height: 45px;
+    margin-right: 225px;
+    color: #394B4B ;
+}
