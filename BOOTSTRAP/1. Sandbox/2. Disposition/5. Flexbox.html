@@ -50,7 +50,7 @@
         <!-- Exemple : d-sm-flex, d-lg-flex, etc ... -->
         <!-- Il existe ce genre de classes réactives pour toutes les propriétés liées à Flexbox. -->
 
-        <div class="bg-success p-5 mb-5">
+        <div class="d-inline-flex bg-success p-5 mb-5">
             <h1 class="text-dark bg-warning p-1">Hello World</h1>
         </div>
 
@@ -58,7 +58,7 @@
         <h2 class="display-6 mb-3">Gérer l'alignement sur le main axis (x de base)</h2>
         <!-- [justify-content-start|end|center|between|around|evenly] -->
 
-        <div class="d-flex bg-dark p-3 mb-5">
+        <div class="d-flex justify-content-center bg-dark p-3 mb-5">
             <p class="text-dark bg-light m-1 p-1">Hello World</p>
             <p class="text-dark bg-light m-1 p-1">Hello World</p>
             <p class="text-dark bg-light m-1 p-1">Hello World</p>
@@ -68,7 +68,7 @@
         <h2 class="display-6 mb-3">Gérer l'alignement sur le cross axis (y de base)</h2>
         <!-- [align-items-start|end|center|baseline|strech] -->
 
-        <div class="d-flex bg-dark p-3 mb-5" style="height: 200px">
+        <div class="d-flex align-items-center bg-dark p-3 mb-5" style="height: 200px">
             <p class="text-dark bg-light m-1 p-1">Hello World</p>
             <p class="text-dark bg-light m-1 p-1">Hello World</p>
             <p class="text-dark bg-light m-1 p-1">Hello World</p>
@@ -78,7 +78,7 @@
         <!-- [flex-row|column|row-reverse|column-reverse] -->
 
 
-        <div class="d-flex  bg-dark p-3 mb-5" style="height: 200px">
+        <div class="d-flex flex-column bg-dark p-3 mb-5" style="height: 200px">
             <p class="text-dark bg-light m-1 p-1">Hello World</p>
             <p class="text-dark bg-light m-1 p-1">Hello World</p>
             <p class="text-dark bg-light m-1 p-1">Hello World</p>
@@ -90,9 +90,9 @@
 
 
         <div class="d-flex bg-dark p-3 mb-5" style="height: 200px">
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
+            <p class="align-self-start text-dark bg-light m-1 p-1">Hello World</p>
+            <p class="align-self-end text-dark bg-light m-1 p-1">Hello World</p>
+            <p class="align-self-center text-dark bg-light m-1 p-1">Hello World</p>
         </div>
 
 
@@ -101,8 +101,8 @@
         <!-- donne flex: 1 1 auto; -->
 
         <div class="d-flex bg-dark align-items-center p-3 mb-5">
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
+            <p class="flex-fill text-dark bg-light m-1 p-1">Hello World</p>
+            <p class="flex-fill text-dark bg-light m-1 p-1">Hello World</p>
             <p class="text-dark bg-light m-1 p-1">Hello World</p>
         </div>
 
@@ -120,8 +120,8 @@
         <!-- [flex-shrink-0|1] -->
 
         <div class="d-flex bg-dark p-3 mb-5">
-            <p style="width: 300px" class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p style="width: 300px" class="text-dark  bg-light m-1 p-1">Lorem ipsum dolor sit amet.</p>
+            <p style="flex: shrink 1; width: 300px " class="text-dark bg-light m-1 p-1">Hello World</p>
+            <p style="flex: shrink 0; width: 300px" class="text-dark  bg-light m-1 p-1">Lorem ipsum dolor sit amet.</p>
         </div>
 
 
@@ -129,8 +129,8 @@
         <!-- [me|ms-auto] -->
 
         <div class="d-flex bg-dark p-3 mb-5">
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
+            <p class="me-auto text-dark bg-light m-1 p-1">Hello World</p>
+            <p class="ms-autotext-dark bg-light m-1 p-1">Hello World</p>
         </div>
 
         
@@ -138,15 +138,15 @@
         <!-- [mt|mb-auto] -->
 
         <div class="d-flex flex-column bg-dark p-3 mb-5" style="height: 400px">
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
+            <p class="mt-auto text-dark bg-light m-1 p-1">Hello World</p>
+            <p class="mb-auto text-dark bg-light m-1 p-1">Hello World</p>
         </div>
 
 
         <h2 class="display-6 mb-3">Wrapper les éléments si il n'y a plus de place</h2>
         <!-- [flex-wrap|nowrap] -->
 
-        <div class="d-flex bg-dark p-3 mb-5" style="width: 400px">
+        <div class="d-flex flex-wrap bg-dark p-3 mb-5" style="width: 400px">
             <p class="text-dark bg-light m-1 p-1" style="width: 200px;">Hello World</p>
             <p class="text-dark bg-light m-1 p-1" style="width: 200px;">Hello World</p>
             <p class="text-dark bg-light m-1 p-1" style="width: 200px;">Hello World</p>
@@ -172,7 +172,7 @@
         <!-- Cette propriété sert à gérer l'alignement du contenu qui est passé à la ligne -->
         <!-- [align-content-center|start|end|etc...] -->
 
-        <div class="d-flex flex-wrap bg-dark p-3 mb-5" style="height: 400px">
+        <div class="align-content-end d-flex flex-wrap bg-dark p-3 mb-5" style="height: 400px">
             <p class="text-dark bg-light m-1 p-1" style="width: 250px">Hello World</p>
             <p class="text-dark bg-light m-1 p-1" style="width: 250px">Hello World</p>
             <p class="text-dark bg-light m-1 p-1" style="width: 250px">Hello World</p>

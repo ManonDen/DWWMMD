@@ -55,12 +55,12 @@
 
         <form>
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="">Email address</label>
-            <input type="email" class="" id="exampleFormControlInput1" placeholder="name@example.com">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control-lg" id="exampleFormControlInput1" placeholder="name@example.com">
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="">Example textarea</label>
-            <textarea class="" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control-plaintext" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
         </form>
 
@@ -72,18 +72,18 @@
         <!-- attribut *disabled* pour désactiver -->
 
         <div class="mb-3">
-          <label for="formFile" class="form-label">Input file</label>
-          <input class="" type="file" id="formFile">
+          <label for="formFile"  class="form-label">Input file</label>
+          <input class="form-control" multiple="true" type="file" id="formFile">
         </div>
 
         <div class="mb-3">
           <label for="formFileMultiple" class="form-label">Multiple files</label>
-          <input class="" type="file" id="formFileMultiple" multiple>
+          <input class="form-control-disabled" disabled="true" type="file" id="formFileMultiple" multiple>
         </div>
 
         <div class="mb-3">
           <label for="formFileDisabled" class="form-label">Disabled</label>
-          <input class="" type="file" id="formFileDisabled" disabled>
+          <input class="form-control" type="file" id="formFileDisabled" disabled>
         </div>
 
 
@@ -92,7 +92,7 @@
         <!-- [form-control] tout simplement, tout en respectant la syntaxe des "datalists" -->
 
         <label for="exampleDataList" class="form-label">Le meilleur fruit</label>
-        <input class="" list="datalistOptions" id="exampleDataList" placeholder="Recherchez ...">
+        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Recherchez ...">
         <datalist id="datalistOptions">
           <option value="Orange">
           <option value="Melon">
@@ -108,7 +108,7 @@
 
         <div class="mb-3">
           <label for="exampleColorInput" class="form-label">Choisissez votre couleur</label>
-          <input type="color" class="" id="exampleColorInput" value="#00FF00" title="Choisissez votre couleur">
+          <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#00FF00" title="Choisissez votre couleur">
         </div>
 
 

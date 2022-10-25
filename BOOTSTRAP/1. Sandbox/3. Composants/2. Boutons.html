@@ -54,8 +54,8 @@
         <!-- [btn] Afin de créer un bouton de base -->
         <!-- [btn-primary|danger|success|...]  Pour changer la couleur -->
 
-        <button class="">Primary</button>
-        <button class="">Secondary</button>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
         <button class="btn btn-success">Success</button>
         <button class="btn btn-danger">Danger</button>
   
@@ -63,7 +63,7 @@
         
         <!--  [btn + btn-outline-primary|success|...] Un bouton souligné -->
 
-        <button class="">Primary</button>
+        <button class="btn btn-outline-primary">Primary</button>
         <button class="btn btn-outline-danger">Secondary</button>
         <button class="btn btn-outline-success">Success</button>
 
@@ -74,7 +74,7 @@
         <!--  [btn + btn-sm] Un petit bouton -->
         <!--  l'attribut "disabled" pour désactivé un bouton -->
 
-        <button class="">Bouton large</button>
+        <button class="btn btn-secondary ">Bouton large</button>
         <button class="btn btn-secondary btn-sm">Petit Bouton</button>
         <button class="btn btn-secondary btn-lg" disabled>Bouton désactivé</button>
 
@@ -82,14 +82,14 @@
 
         <h2 class="display-6 mb-3 mt-5">Badge </h2>
         <!-- [badge] -->
-        <h1>Cuisiner un bon risotto <span class="">New</span></h1>
+        <h1>Cuisiner un bon risotto <span class="badge bg-secondary">New</span></h1>
 
 
         <h2 class="display-6 mb-3 mt-5">Badge dans un bouton</h2>
         <!-- [badge] Le tout dans un bouton -->
 
         <button class="btn btn-primary">
-            Notifications <span class="">4</span>
+            Notifications <span class="badge bg-primary">4</span>
         </button>
 
         
@@ -98,7 +98,7 @@
 
         <button class="btn btn-primary position-relative">
             Inbox
-            <span class="position-absolute top-0 start-100 translate-middle  bg-danger">
+            <span class="badge rounded-pill position-absolute top-0 start-100 translate-middle bg-danger">
               99+
               <span class="visually-hidden">unread messages</span>
             </span>
@@ -108,12 +108,12 @@
           
         <!-- [badge] Tout court pour petits badges -->
   
-        <span class=" bg-primary">Primary</span>
+        <span class="badge bg-primary">Primary</span>
         <span class="badge bg-secondary">Secondary</span>
 
         <!-- [badge + rounded-pill] Pour des badges pilules -->
 
-        <span class="  bg-primary">Primary</span>
+        <span class="badge rounded-pill  bg-primary">Primary</span>
         <span class="badge rounded-pill bg-secondary">Secondary</span>
  
 
@@ -122,7 +122,7 @@
           
         <!-- [btn-close] -->
 
-        <button class=" bg-danger p-3"></button>
+        <button class="btn-close bg-danger p-3"></button>
 
 
 
@@ -131,8 +131,8 @@
         <!-- [btn-group] Sur le parent qui contient des boutons -->
         <!-- On peut rajouter la classe [active] à un bouton -->
 
-        <div class="">
-            <button class="btn btn-primary">gauche</button>
+        <div class="btn-group">
+            <button class="btn btn-primary active">gauche</button>
             <button class="btn btn-primary">milieu</button>
             <button class="btn btn-primary">droite</button>
         </div>
