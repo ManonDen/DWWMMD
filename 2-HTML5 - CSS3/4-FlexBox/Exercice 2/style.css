@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  background-color: blue;
+  width: 800px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 200px auto;
+}
+.A header {
+  background-color: orange;
+  height: 150px;
+}
+.A .conteneurA {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin: 30px 0;
+}
+.A .conteneurA .gaucheA {
+  background-color: grey;
+  flex: 1;
+  height: 50vh;
+  margin-right: 10px;
+}
+.A .conteneurA .droiteA {
+  background-color: yellow;
+  flex: 3;
+  flex-direction: column;
+  align-content: center;
+}
+.A footer {
+  background-color: green;
+  height: 150px;
+}
+.B header {
+  background-color: orange;
+  height: 150px;
+}
+.B .conteneurB {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin: 30px 0;
+}
+.B .conteneurB .gaucheB {
+  background-color: grey;
+  flex: 1;
+  height: 50vh;
+  margin-right: 10px;
+}
+.B .conteneurB .droiteB {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.B .conteneurB .droiteB div:nth-child(1) {
+  background-color: yellow;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.B .conteneurB .droiteB div:nth-child(2) {
+  background-color: #8baabd;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.B .conteneurB .droiteB div:nth-child(3) {
+  background-color: #00ffbf;
+  height: 100px;
+}
+.B footer {
+  background-color: green;
+  height: 150px;
+}
+.C .conteneurC1 {
+  display: flex;
+  flex-direction: row;
+}
+.C .conteneurC1 div:nth-child(1) {
+  background-color: orange;
+  height: 150px;
+  flex: 2;
+  margin-right: 40px;
+}
+.C .conteneurC1 div:nth-child(2) {
+  background-color: grey;
+  height: 150px;
+  flex: 2;
+}
+.C header {
+  background-color: yellow;
+  height: 120px;
+  margin-top: 30px;
+}
+.C .conteneurC2 {
+  display: flex;
+  flex-direction: row;
+}
+.C .conteneurC2 .itemsC {
+  height: 125px;
+  background-color: orange;
+  flex: 1;
+  margin: 50px 0px;
+}
+.C .conteneurC2 .itemsC:nth-child(1),
+.C .conteneurC2 .itemsC:nth-child(2),
+.C .conteneurC2 .itemsC:nth-child(3) {
+  margin-right: 30px;
+}
+.C .conteneurC3 {
+  display: flex;
+  flex-direction: row;
+}
+.C .conteneurC3 div:nth-child(1),
+.C .conteneurC3 div:nth-child(2) {
+  background-color: yellow;
+  height: 150px;
+  flex: 2;
+}
+.C .conteneurC3 div:nth-child(1) {
+  margin-right: 40px;
+}
+.C footer {
+  background-color: green;
+  height: 150px;
+  margin-top: 5px;
+}
+.D {
+  background-color: #fff;
+  border: 7px #3d7acb solid;
+}
+.D header {
+  border: 7px #a06e23 solid;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.D .conteneurD1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+.D .conteneurD1 .gauche {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 350PX;
+  justify-content: space-between;
+}
+.D .conteneurD1 .gauche .itemsD1 {
+  border: 7px #3d7acb solid;
+  height: 80px;
+  margin: 10px 20px 10px 20px;
+}
+.D .conteneurD1 .droite {
+  flex: 3;
+  height: 350px ;
+  justify-items: center;
+}
+.D .conteneurD1 .droite .itemsD2 {
+  border: 7px #2a44ac solid;
+  height: 95px;
+  margin: 15px 30px;
+}
+.D footer {
+  border: 7px green solid;
+  height: 120px;
+  margin-top: 30px;
+}
