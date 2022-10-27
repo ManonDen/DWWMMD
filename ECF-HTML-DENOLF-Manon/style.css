@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fff;
+}
+main {
+  background-image: url(images/fond-texture-arbre-marron-jaune-modifié.png);
+  margin: 0 auto;
+  height: 1023px;
+  width: 957px;
+}
+section {
+  background-color: #EEE7E7;
+  width: 836px;
+  height: 902px;
+  position: relative;
+  top: 6%;
+  left: 6%;
+  border-radius: 20px;
+  display: flex;
+  align-content: space-around;
+  flex-direction: column;
+}
+section h1 {
+  font-size: 50pt;
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 2%;
+}
+section .container1 {
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+}
+section .container1 .container2 {
+  width: 800px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+section .container1 .container2 input {
+  background-color: #d9d9d9;
+  width: 25px;
+  height: 25px;
+}
+section .container1 .container2 div {
+  border-bottom: 1pt solid black;
+  width: 600px;
+  font-size: 14pt;
+}
+section img:nth-child(5) {
+  position: absolute;
+  left: 90%;
+  top: 90%;
+}
+section img:nth-child(4) {
+  position: absolute;
+  left: 13%;
+  top: 88%;
+}
+section img:nth-child(3) {
+  position: absolute;
+  left: 6%;
+  top: 88.5%;
+}
+@media screen and (max-width: 748px) {
+  main {
+    height: 1133px;
+    width: 646px;
+  }
+  section {
+    width: 576px;
+    height: 1018px;
+    top: 5%;
+    left: 6%;
+  }
+  section h1 {
+    font-size: 40pt;
+  }
+  section .container1 .container2 {
+    width: 550px;
+    margin-top: 60px;
+  }
+  section .container1 .container2 div {
+    width: 400px;
+    font-size: 12pt;
+  }
+  section img:nth-child(5) {
+    left: 88%;
+    top: 93%;
+  }
+  section img:nth-child(4) {
+    left: 16%;
+    top: 89%;
+  }
+  section img:nth-child(3) {
+    left: 8%;
+    top: 89.5%;
+  }
+}
+/* Responsive (mobile)*/
+@media screen and (max-width: 360px) {
+  main {
+    width: 318px;
+    height: 900px;
+  }
+  section {
+    width: 264px;
+    height: 810px;
+    top: 4%;
+    left: 8%;
+  }
+  section h1 {
+    font-size: 30pt;
+    padding-top: 10%;
+  }
+  section .container1 {
+    margin-top: 20px;
+  }
+  section .container1 .container2 {
+    width: 275px;
+    margin-top: 50px;
+  }
+  section .container1 .container2 input {
+    width: 15px;
+    height: 15px;
+  }
+  section .container1 .container2 div {
+    width: 200px;
+    font-size: 11pt;
+  }
+  section img:nth-child(5) {
+    left: 75%;
+    top: 93%;
+  }
+  section img:nth-child(4) {
+    left: 25%;
+    top: 88%;
+  }
+  section img:nth-child(3) {
+    left: 8%;
+    top: 88.5%;
+  }
+}

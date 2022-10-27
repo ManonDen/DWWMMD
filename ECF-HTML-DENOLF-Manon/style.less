@@ -1,0 +1,227 @@
+// page web
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// Je met la couleur de fond des marges de la page web
+body {
+    background-color: #fff;
+}
+
+// Ajoût du fond marbré de la to do list 
+main {
+    background-image: url(images/fond-texture-arbre-marron-jaune-modifié.png);
+    margin: 0 auto;
+    height: 1023px;
+    width: 957px;
+}
+
+// Carré blanc
+section {
+    background-color: #EEE7E7;
+    width: 836px;
+    height: 902px;
+    position: relative;
+    top: 6%;
+    left: 6%;
+    border-radius: 20px;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+
+    // le gros titre to do list
+    h1 {
+        font-size: 50pt;
+        font-family: 'Playfair Display', serif;
+        font-weight: normal;
+        text-align: center;
+        padding-top: 2%
+    }
+
+    // ce container contient toutes les cases à cocher
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        align-content: space-evenly;
+
+        // ce container contient 1 case à cocher
+        .container2 {
+            width: 800px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+
+            // case à cocher
+            input {
+                background-color: #d9d9d9;
+                width: 25px;
+                height: 25px;
+            }
+
+            // trait noir
+            div {
+                border-bottom: 1pt solid black;
+                width: 600px;
+                font-size: 14pt;
+            }
+        }
+    }
+
+    // je met les 3 images des (futurs) boutons
+    img {
+
+        // je cible le bouton supprimer
+        &:nth-child(5) {
+            position: absolute;
+            left: 90%;
+            top: 90%;
+        }
+
+        // je cible le bouton modifier
+        &:nth-child(4) {
+            position: absolute;
+            left: 13%;
+            top: 88%;
+        }
+
+        // je cible le bouton ajouter
+        &:nth-child(3) {
+            position: absolute;
+            left: 6%;
+            top: 88.5%;
+        }
+    }
+
+}
+
+// Responsive (version tablette)
+@media screen and (max-width:748px) {
+
+    // Ajoût du fond marbré de la to do list 
+    main {
+        height: 1133px;
+        width: 646px;
+    }
+
+    // Carré blanc
+    section {
+        width: 576px;
+        height: 1018px;
+        top: 5%;
+        left: 6%;
+
+        // le gros titre to do list
+        h1 {
+            font-size: 40pt;
+        }
+
+        // ce container contient toutes les cases à cocher
+        .container1 {
+
+            // ce container contient 1 case à cocher
+            .container2 {
+                width: 550px;
+                margin-top: 60px;
+
+                // trait noir
+                div {
+                    width: 400px;
+                    font-size: 12pt;
+                }
+            }
+        }
+
+        // je met les 3 images des (futurs) boutons
+        img {
+
+            // je cible le bouton supprimer
+            &:nth-child(5) {
+                left: 88%;
+                top: 93%;
+            }
+
+            // je cible le bouton modifier
+            &:nth-child(4) {
+                left: 16%;
+                top: 89%;
+            }
+
+            // je cible le bouton ajouter
+            &:nth-child(3) {
+                left: 8%;
+                top: 89.5%;
+            }
+        }
+    }
+}
+
+/* Responsive (mobile)*/
+@media screen and (max-width:360px) {
+
+    // Ajoût du fond marbré de la to do list 
+    main {
+        width: 318px;
+        height: 900px;
+    }
+
+    // Carré blanc
+    section {
+        width: 264px;
+        height: 810px;
+        top: 4%;
+        left: 8%;
+
+        // le gros titre to do list
+        h1 {
+            font-size: 30pt;
+            padding-top: 10%
+        }
+
+        // ce container contient toutes les cases à cocher
+        .container1 {
+            margin-top: 20px;
+
+            // ce container contient 1 case à cocher
+            .container2 {
+                width: 275px;
+                margin-top: 50px;
+
+                // case à cocher
+                input {
+                    width: 15px;
+                    height: 15px;
+                }
+
+                // trait noir
+                div {
+                    width: 200px;
+                    font-size: 11pt;
+                }
+            }
+        }
+
+        // je met les 3 images des (futurs) boutons
+        img {
+
+            // je cible le bouton supprimer
+            &:nth-child(5) {
+                left: 75%;
+                top: 93%;
+            }
+
+            // je cible le bouton modifier
+            &:nth-child(4) {
+                left: 25%;
+                top: 88%;
+            }
+
+            // je cible le bouton ajouter
+            &:nth-child(3) {
+                left: 8%;
+                top: 88.5%;
+            }
+        }
+    }
+}
