@@ -1,0 +1,133 @@
+									EXERCICE 4
+
+1)
+Algorithme:nb1à3
+Variables:
+compteur:entier
+
+DEBUT
+	écrire("Entrez un nombre entre 1 et 3 : ");
+	lire(compteur)
+	Tant que (compteur<1 ou compteur>3) faire
+	{
+		écrire("Entrez un nombre entre 1 et 3 : ");
+		lire(compteur)
+	}
+	écrire("Le nombre est correcte.")
+FIN
+
+2)
+Algorithme: Dnbentre10et20
+Variables:
+compteur:entier
+
+DEBUT
+	écrire("Entrez un nombre entre 10 et 20 : ");
+	lire(compteur)
+	Tant que (compteur<10 ou compteur>20) faire
+	{
+		lire(compteur)
+		si (compteur<10) alors
+			écrire("Plus grand !")
+			écrire("Entrez un nombre entre 10 et 20 : ");
+			lire(compteur)
+			
+		sinon (compteur>20) alors
+			écrire("Plus petit !")
+			écrire("Entrez un nombre entre 10 et 20 : ");
+			lire(compteur)
+		finsi
+	}
+	écrire("Le nombre est correcte.")
+FIN
+
+3)
+
+Algorithme: affiche10premiersnb
+Variables:
+compteur,nb:entier
+
+DEBUT
+	écrire("Donnez un nombre")
+	lire(nb)
+	compteur <-0
+	Tant que (compteur<10) faire
+	{
+		nb<-nb+1
+		écrire(nb)
+		compteur <-compteur+1
+	}
+		
+FIN
+
+4)
+
+Algorithme:calculPGCD
+Variables:
+nb1,nb2,Z:entiers
+
+DEBUT
+	écrire("Donnez le premier nombre : ")
+	lire(nb1)
+	écrire("Donnez le second nombre : ")
+	lire(nb2)
+
+	Tant que ((nb1*nb2)!=0) faire 
+	{	si (nb1>nb2) alors
+			nb1=nb1-nb2
+		else
+			nb2=nb2-nb1
+		finsi
+	}	
+	si(nb1==0) alors
+		écrire("PGCD est : ".nb2)
+	else
+		écrire("PGCD est : ".nb1)
+	finsi
+FIN
+
+5)
+Algorithme:calculPPCM
+variables:
+nb1,nb2,Z:entiers
+
+DEBUT
+	écrire("Donnez le premier nombre : ")
+	lire(nb1)
+	écrire("Donnez le second nombre : ")
+	lire(nb2)
+
+	nba=nb1
+	nbb=nb2
+	Tant que ((nb1*nb2)!=0) faire 
+	{	si (nb1>nb2) alors
+			nb1=nb1-nb2
+		else
+			nb2=nb2-nb1
+		finsi
+	}	
+	si(nb1==0) alors
+		écrire("PPCM est : ".(nba*nbb)/nb2)
+	else
+		écrire("PPCM est : ".(nba*nbb)/nb1)
+	finsi
+FIN
+	
+exos supp
+1)
+Algorithme:tablemulti
+variables:
+nb,compteur:entiers
+
+DEBUT
+	écrire("Donner un nombre à multiplier")
+	lire(nb)
+	compteur<-1
+	écrire("tab de".nb.":")
+	
+	tant que (compteur<11) {
+		écrire(nb*compteur & "-")
+		compteur=compteur+1
+	}
+	
+FIN

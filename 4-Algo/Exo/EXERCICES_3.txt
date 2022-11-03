@@ -154,9 +154,9 @@ variables :
 nombre:entier
 debut 
 	lire(nombre)
-	si (nombre>30) alors
+	si (nombre>=30) alors
 		écrire(« La facture est de » & (0,10*10+0,09*20+0,08*(nombre-30)))
-	sinonsi (nombre>10) et (nombre<=30) alors
+	sinonsi (nombre>10) alors
 		écrire(« La facture est de » & (0,10*10+0,09*(nombre-10)))
 	sinon 
 
