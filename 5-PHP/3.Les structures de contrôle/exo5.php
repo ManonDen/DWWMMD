@@ -1,5 +1,5 @@
 <?php
-$age = readline("Quel de l'enfant : ");
+$age = readline("Quel âge à l'enfant : ");
 if ($age >=12){
     echo("Catégorie cadet");
 } 
