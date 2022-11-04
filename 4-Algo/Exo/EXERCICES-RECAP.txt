@@ -1,0 +1,116 @@
+							EXERCICES RECAP
+
+1)
+Algorithme:choixnb
+variables:
+nb : entier
+DEBUT
+	lire(nb)
+	si (nb<=5) alors
+		écrire("Il est compris entre 1 et 5")
+	sinonsi (nb<=10) alors
+		écrire("Il est compris entre 6 et 10")
+	sinonsi(nb<=15) alors
+		écrire("Il est compris entre 11 et 15")
+	Sinon alors
+		écrire("Il est compris entre 16 et 20")
+FIN
+
+2)
+Algorithme
+Variables:
+nb: entier
+DEBUT
+	lire(nb)
+
+	écrire("Nombre : " & nb)
+	Si(nb<7) alors
+		écrire("Bonjour")
+	Sinonsi (nb<14) alors
+		écrire("Salut")
+	Sinon
+		écrire("Hello")
+
+3)
+Algorithme:cluedo
+Variables:
+qM,qL,qC,qS:booléen
+R:chaîne de caractère
+
+DEBUT
+	écrire("Pensez à un personnage : Melle Rose, le professeur Violet, le Colonet Moutarde, Le Révérend Olive et Mme Leblanc."
+	écrire("True : oui; False: non")
+
+	écrire("Est-ce que votre personnage est un homme ?")
+	lire(qS)
+	
+	
+	si (qS==True) alors
+		écrire("Votre personnage porte-t-il des moustaches ?")
+		lire(qM)
+		
+		si (qM==True) alors
+			R<-"le Colonet Moutarde"
+		sinon
+			écrire("Votre personnage porte-t-il un chapeau ?")
+			lire(qC)
+			
+			si (qC==True) alors
+				R<- "Le professeur Violet"
+			sinon
+				R <- "Le Révérend Olive"
+			finsi
+		finsi
+			
+	sinon
+		écrire("Votre personnage porte-t-il des lunettes ?)
+		lire(qL)
+
+		si (qL ==False) alors
+			R<-"Melle Rose"
+		sinon
+			R<-"Mme Leblanc"
+		finsi
+	finsi
+
+	écrire("Réponse : Le personnage auquel vous pensez est "& R)
+	
+FIN
+
+4)
+Algorithme:nbpairdiv3
+Variables:
+nb,compteur:entier
+
+DEBUT
+	écrire("Entrez un nombre pair et divisible par 3 : ")
+	lire(nb)
+	compteur <-2
+
+	tant que  (nb%nb!=0ou nb%3 !=0)  faire
+		si (nb%nb!=0 ) alors
+			écrire("Le nombre n'est pas pair !")
+		sinon 
+			écrire("Le nombre n'est pas divisible par 3 !")
+		finsi
+
+		écrire ("**********Essai numéro " &compteur& " ************")
+
+		compteur <-compteur+1
+		écrire("Entrez un nombre pair et divisible par 3 : ")
+		lire(nb)
+	
+	fintq
+
+	compteur <-1
+	garde <-""
+	tant que (compteur <=10)
+		si(nb%compteur==0)
+			garde=garde + "par"+compteur
+		finsi
+		compteur=compteur+1
+	fintq
+	
+	écrire("***************************")
+	écrire("Le nombre est "&nb&" est divisible ")
+FIN
