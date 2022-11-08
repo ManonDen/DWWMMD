@@ -1,5 +1,5 @@
 <?php
-    $nb=readline("Entre un nombre entier : ");
+    $nb=(int)readline("Entre un nombre entier : ");
 
     $nbChang=(integer)$nb;
     while ($nbChang!=$nb){
@@ -7,18 +7,20 @@
         $nbChang=(integer)$nb;
     }
 
-    $max=-100000000000;
-    $min=1000000000000;
+    $max=$nb;
+    $min=$nb;
     for ($i=1;$i<=5;$i++){
-        if ($nb>$max){
-            $max=$nb;
+        switch(true){
+            case $nb>$max;
+                $max=$nb;
+                break;
+            case$nb<$min;
+                $min=$nb;
+                break;     
         }
-        elseif($nb<$min){
-            $min=$nb;
-        }
+
         $nb=readline("Entre un nombre entier : ");
         $nbChang=(integer)$nb;
-
         while ($nbChang!=$nb){
             $nb=readline("Entrez un nombre entier : ");
             $nbChang=(integer)$nb;

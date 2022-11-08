@@ -3,8 +3,6 @@
 $nb=readline("Entrez un nombre entier : ");
 
 $nbChang=(integer)$nb;
-echo $nbChang . "\n";
-
 while ($nbChang!=$nb){
         $nb=readline("Entrez un nombre entier : ");
         $nbChang=(integer)$nb;
