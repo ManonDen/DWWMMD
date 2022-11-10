@@ -1,18 +1,17 @@
 <?php
     $tab=["Denolf","Manon","Noel","Paris"];
-
     $saisir=readline("Entrez mot à chercher dans la liste : ");
-    $index="";
-    
+    $trouver=false;
+
     for ($i=0;$i<count($tab);$i++){
         if( $tab[$i]== $saisir){
-            $index=$i;
+            echo"Le mot est dans le tableau.";
+            $trouver=true;
         }
     }
-    foreach ($tab as $key => $value){
-        if ($key==$index){
-            echo $key." : ".$value;
-        }
+    if ($trouver==false){
+        echo"Le mot n'est pas dans le tableau.";
     }
+
 
 ?>

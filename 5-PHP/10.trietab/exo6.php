@@ -7,9 +7,7 @@
     for ($z=count($tab2);$z<count($tab2)*2;$z++){
         for ($i=0;$i<count($tab1);$i++){
                     $tab3[$i]=$tab1[$i];
-        }
-    
-    
+        } 
         $tab3[$z]=$tab2[$x];
         $x++;
     }
@@ -26,9 +24,7 @@
                 }
             }
     }
-
     foreach($tab3 as $valeur ){
         echo $valeur. "\n";
     }
-    
 ?>
