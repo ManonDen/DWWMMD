@@ -1,5 +1,10 @@
 <?php
-    $nb=(int)readline("Entre un nombre entier : ");
+    $nb=readline("Entre un nombre entier : ");
+
+    while ($nb!=(int)$nb){
+        $nb=readline("Entrez un nombre entier : ");
+}
+    
     $resultat=1;
     for($i=2;$i<=$nb;$i++){
         $resultat=$resultat*$i;

@@ -2,14 +2,10 @@
 
 $nb=readline("Entrez un nombre entier : ");
 
-$nbChang=(integer)$nb;
-
-while ($nbChang!=$nb){
+while ($nb!=(int)$nb){
         $nb=readline("Entrez un nombre entier : ");
-        $nbChang=(integer)$nb;
 }
 
-echo "ok";
 $neg=$nb;
 $pos=$nb;
 echo("Les 5 nombres précédents sont :\n");
