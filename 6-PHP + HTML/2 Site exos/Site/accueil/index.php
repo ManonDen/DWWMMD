@@ -1,5 +1,5 @@
 <?php
 $titre= "Mon super site d'exercice";
 $content="";
-require "template.php";
+require "../general/template.php";
 ?>
