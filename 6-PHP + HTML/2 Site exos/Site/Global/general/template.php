@@ -12,7 +12,7 @@
     <!-- Navebar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="../accueil/index.php">Accueil</a>
+        <a class="navbar-brand" href="../../Global/accueil/index.php">Accueil</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,7 +23,7 @@
         <!-- Les menus déroulant -->
         <?php 
         // Dictionnaire des menus déroulant
-        $tab=array("Facile"=>[1,2,3,4,5],"Moyen"=>[1,2,3,4,5,6],"Difficile"=>[1,2,3,4,5],"Arme"=>[1,2,3]);
+        $tab=array("Facile"=>[1,2],"Moyen"=>[1,2,3,4],"Difficile"=>[1,2],"Arme"=>[1,2,3]);
 
         // Je parcous mes menus (facile, moyen...)
         foreach($tab as $key => $value):?>
@@ -32,7 +32,7 @@
                 <div class="dropdown-menu">
                 <!-- Je parcours les exercice 1,2... -->
                 <?php for($i=0;$i<count($value);$i++):?>
-                    <a class="dropdown-item" href="../<?=$key?>/Exercice<?=$value[$i]?>.php"> Exercice <?=$value[$i] ?></a>
+                    <a class="dropdown-item" href="../../Exos/<?=$key?>/Exercice<?=$value[$i]?>.php"> Exercice <?=$value[$i] ?></a>
                 <?php endfor?>
             
                 </div>

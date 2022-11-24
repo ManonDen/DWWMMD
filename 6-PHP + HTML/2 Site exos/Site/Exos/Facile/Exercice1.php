@@ -11,8 +11,6 @@
     <div style="height:50px" class="position-relative my-2">
         <input class="position-absolute top-50 start-50 translate-middle " type="submit" name="bouton" value="Calcul"/>
     </div>
-</form>
-
 
     <?php 
     $resultat=" ";
@@ -22,9 +20,13 @@
     ?>
 
     <p>Le nombre au carré : <?= $resultat ?> </p>
+</form>
+
+
+    
 
 <?php
 $titre= "Exercices faciles";
 $content= ob_get_clean();
-require "../general/template.php";
+require "../../Global/general/template.php";
 ?>

@@ -40,7 +40,7 @@ require "Fonctions.php";?>
 
     <div class="form-group ps-5 pt-2">
         <label> Entrez votre âge : </label>
-        <input type="text" name="age">
+        <input type="number" name="age">
     </div>
         
     <div class="position-relative mt-2 pt-5">
@@ -56,7 +56,7 @@ require "Fonctions.php";?>
     <p class="pt-1 ps-2 fw-bolder">Résultat affichage : </p>
     <div class="form-group ps-5 pt-2">
         <label>Entrez un nombre</label>
-        <input type="text" name="nb">
+        <input type="number" name="nb">
     </div>
 
     <div class="position-relative mt-2 pt-5">
@@ -70,5 +70,5 @@ require "Fonctions.php";?>
 <?php
 $titre= "Exercices faciles";
 $content= ob_get_clean();
-require "../general/template.php";
+require "../../Global/general/template.php";
 ?>
