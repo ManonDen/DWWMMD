@@ -1,9 +1,7 @@
 <?php ob_start();
 require "Fonctions.php";?>
-<h2>Exercice 2</h2>
-
 <!-- Exercice1 -->
-<h3>1) Affichage : saisies</h3>
+<h3>Affichage : saisies</h3>
 <!-- Tableau des infos d'utilisateurs avec 2 dictionnaires -->
 <?php $info=[array('Nom'=>"Marie",'Age'=>30,'Homme'=>false)
 ,array('Nom'=>"Pierre",'Age'=>32,'Homme'=>true)]; 
@@ -20,7 +18,7 @@ require "Fonctions.php";?>
 </div>
 
 <!-- Exercice2 -->
-<h3>2) Fonction : vérification nombre pair </h3>
+<h3>Fonction : vérification nombre pair </h3>
 <div style="width:350px" class="m-auto bg-light my-5 border border-dark">
     <p class="pt-1 ps-2 fw-bolder">Résultat affichage : </p>
     <p class="ps-5">Nombre1 vaut 5</p>
@@ -30,7 +28,7 @@ require "Fonctions.php";?>
 </div>
 
 <!-- Exercice3 -->
-<h3>3) Formulaire avec méthode get : affichage saisies</h3>
+<h3>Formulaire avec méthode get : affichage saisies</h3>
 <form action="Exercice2.php" method="get" style="width:350px" class="m-auto bg-light my-5 border border-dark">
     <p class="pt-1 ps-2 fw-bolder">Résultat affichage : </p>
     <div class="form-group ps-5">
@@ -51,7 +49,7 @@ require "Fonctions.php";?>
 </form>
 
 <!-- Exercice4 -->
-<h3>4) Formulaire avec post : vérification nombre pair</h3>
+<h3>Formulaire avec post : vérification nombre pair</h3>
 <form action="Exercice2.php" method="post" style="width:350px" class="m-auto bg-light my-5 border border-dark">
     <p class="pt-1 ps-2 fw-bolder">Résultat affichage : </p>
     <div class="form-group ps-5 pt-2">

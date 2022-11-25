@@ -1,6 +1,6 @@
 <?php ob_start()?>
 
-<h2>Exercice 1 : nombre au carré</h2>
+<h2>Nombre au carré</h2>
 
 <form action="Exercice1.php" method="post" style="width:400px"class="m-auto bg-light border border-primary  px-5 mt-5">
     <div class="form-group row pt-4">

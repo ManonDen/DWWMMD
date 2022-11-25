@@ -2,7 +2,7 @@
 require "Fonctions.php"?>
 
 
-<h2>Exercice 2 : Tableau de tableaux associatifs</h2>
+<h2>Tableau de tableaux associatifs</h2>
 <!-- 1 tableau contenant 4 dictionnaire -->
 <?php $users=[array('Nom'=>"Marie",'Age'=>32,"Sexe"=>false),
 array('Nom'=>"Pierre",'Age'=>32,'Sexe'=>true),

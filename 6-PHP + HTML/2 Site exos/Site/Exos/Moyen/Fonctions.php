@@ -21,19 +21,18 @@ function calculerMoyenne($tab){
 }
 
 function estTableauPair($tab){
-    $bool=true;
-    foreach($tab as $value){
-        if ($value%2!=0){
-            $bool=false;
-            break;
+    foreach($tab as $nb){
+        while($nb%2!=0){
+            return false;
         }
     }
-    return $bool;
+    
+    return true;
 }
 
 function afficheAn($dicoanimal,$typeR){
     foreach($dicoanimal as $key => $value){
-        echo $typeR==$dicoanimal["type"] ? $key ." : ".$value."<br>" : "";        
+        echo $typeR== $dicoanimal["type"] ? $key ." : ".$value."<br>" : "";        
     }
     echo $typeR==$dicoanimal["type"] ? "-----------------------<br>":"";
 }
