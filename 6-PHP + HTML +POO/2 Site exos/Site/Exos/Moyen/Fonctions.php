@@ -46,14 +46,4 @@ function affichebis($tab){
     echo $tab["nom"] ." ".$tab["prenom"] ." habite au " .$tab["adress"]." à ". $tab["ville"]. "(".$tab["numero"].") <br>";
 }
 
-function tri($employe){
-    for($i=0;$i<2;$i++){
-        echo($employe[$i]["nom"]<$employe[$i+1]["nom"]);
-        if ($employe[$i]["nom"]<$employe[$i+1]["nom"]){
-            $garde=$employe[$i]["nom"];
-            $employe[$i]["nom"]=$employe[$i+1]["nom"];
-            $employe[$i]["nom"]=$garde;
-        }
-    }
-}
 ?>

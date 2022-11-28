@@ -1,30 +1,63 @@
 <?php ob_start();
 require "Fonctions.php";
-class Employe{
+class Employe
+{
     public $nom;
     public $prenom;
-    public $adress;
+    public $adresse;
     public $ville;
     public $numero;
 
-    public function __construct($n,$p,$a,$v,$num)
+    public function __construct($n, $p, $a, $v, $num)
     {
-        $this->nom=$n;
-        $this->prenom=$p;
-        $this->adress=$a;
-        $this->ville=$v;
-        $this->numero=$num;
+        $this->nom = $n;
+        $this->prenom = $p;
+        $this->adresse = $a;
+        $this->ville = $v;
+        $this->numero = $num;
     }
-
 }
-    $em1= new Employe("Denolf","Manon","6 rue bonduelle,59153","gfp","06-95-75...");
-    $em2= new Employe("Narix","Theodore","15 rue bonduelle,59153","gfp","06-94-58...");
-    $em3= new Employe("Dewolf","Steph","8 rue bonduelle,59153","gfp","06-95-79...");
-    $employes = [$em1,$em2,$em3];
-    $employes = json_decode(json_encode($employes), true);
-    $employes=tri($employes);
-?>
+// données
+$em1 = new Employe("Paro", "Scas", "48 rue assiette,59153", "gfp", "06-95-75-20-55");
+$em2 = new Employe("Narix", "Theodore", "15 rue duel,59153", "gfp", "07-88-77-88-88");
+$em3 = new Employe("Dewolf", "Steph", "8 rue alpinisme,59153", "gfp", "06-95-79-88-88");
+$em4 = new Employe("Denolf", "Manon", "6 rue bonduelle,59153", "gfp", "06-95-75-00-00");
+$employes = [$em1, $em2, $em3, $em4];
 
+// trie de $employes
+$employes = json_decode(json_encode($employes), true);
+$columns = array_column($employes, 'nom');
+array_multisort($columns, SORT_ASC, $employes);
+?>
+<h2>Tableaux associatifs avec POO : employé</h2>
+
+<table class="table">
+    <!-- en-tête -->
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <?php
+            foreach ($employes as $index) :
+                foreach ($index as $key => $value) : ?>
+                    <td class="fw-bolder"><?= $key ?></td>
+            <?php endforeach;
+                break;
+            endforeach; ?>
+        </tr>
+    </thead>
+    <!-- données -->
+    <tbody>
+        <?php
+        for($i=0;$i<count($employes);$i++): ?>
+            <tr>
+                <th scope="row"><?= $i+1; ?></th>
+                <?php foreach ($employes[$i] as $key => $value) : ?>
+                    <td><?= $value ?></td>
+                <?php endforeach; ?>
+            </tr>
+        <?php endfor; ?>
+    </tbody>
+</table>
 
 <?php
 $titre = "Exercices Moyen";
