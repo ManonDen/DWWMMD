@@ -46,4 +46,25 @@ function affichebis($tab){
     echo $tab["nom"] ." ".$tab["prenom"] ." habite au " .$tab["adress"]." à ". $tab["ville"]. "(".$tab["numero"].") <br>";
 }
 
+function vraiFaux($bool){
+    $bool = $bool? "Vrai" : "Faux";
+    return $bool;
+}
+
+function afficheVoiture($voiture){
+    echo "Marque : ". $voiture->getMarque() ." <br>". "Model : ". $voiture->getModel()." <br>". "Couleur : ". $voiture->getCouleur()." <br>". 
+    "Nombre de porte : ". $voiture->getnbporte()." <br>". "Electrique : ". vraiFaux($voiture->getElectrique()).
+    " <br>". "----------------------------- <br> ";
+}
+
+function VoitureMarque($voitures){
+    $tab=[];
+    for($i=0;$i<count($voitures);$i++){
+        $tab[$i]=$voitures[$i]->getMarque();
+    }
+    $tab=array_unique($tab);
+    return $tab ;
+}
+
+
 ?>

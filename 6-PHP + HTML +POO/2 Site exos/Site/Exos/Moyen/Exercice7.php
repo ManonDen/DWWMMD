@@ -8,12 +8,12 @@ class Employe
     public $ville;
     public $numero;
 
-    public function __construct($n, $p, $a, $v, $num)
+    public function __construct($nom, $prenom, $adress, $ville, $num)
     {
-        $this->nom = $n;
-        $this->prenom = $p;
-        $this->adresse = $a;
-        $this->ville = $v;
+        $this->nom = $nom;
+        $this->prenom = $prenom;
+        $this->adresse = $adress;
+        $this->ville = $ville;
         $this->numero = $num;
     }
 }
@@ -24,8 +24,10 @@ $em3 = new Employe("Dewolf", "Steph", "8 rue alpinisme,59153", "gfp", "06-95-79-
 $em4 = new Employe("Denolf", "Manon", "6 rue bonduelle,59153", "gfp", "06-95-75-00-00");
 $employes = [$em1, $em2, $em3, $em4];
 
-// trie de $employes
+
+// Passe d'un objet à un dictionnaire
 $employes = json_decode(json_encode($employes), true);
+// trie de $employes
 $columns = array_column($employes, 'nom');
 array_multisort($columns, SORT_ASC, $employes);
 ?>
@@ -35,7 +37,7 @@ array_multisort($columns, SORT_ASC, $employes);
     <!-- en-tête -->
     <thead>
         <tr>
-            <th scope="col">#</th>
+            <th scope="col">id</th>
             <?php
             foreach ($employes as $index) :
                 foreach ($index as $key => $value) : ?>
