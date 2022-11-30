@@ -3,20 +3,16 @@ class Stagiaire{
     private $nom;
     private $notes;
 
-    public function __construct(string$nom,array$notes){
+    public function __construct(string $nom,array $notes){
         $this->nom=$nom;
         $this->notes=$notes;
     }
 
-    public function getNom(){
-        return $this->nom;}
-    public function setNom($nom){
-        return $this->nom=$nom;}
+    public function getNom(){return $this->nom;}
+    public function setNom($nom){return $this->nom=$nom;}
 
-    public function getNotes(){
-        return $this->notes;}
-    public function setNotes($notes){
-        return $this->notes=$notes;}
+    public function getNotes(){return $this->notes;}
+    public function setNotes($notes){return $this->notes=$notes;}
     
     public function calculerMoyenne(){
         $moyenne=round(array_sum($this->notes)/count($this->notes),2);
@@ -52,7 +48,7 @@ $stagiaires=[$stagiaire1,$stagiaire2,$stagiaire3];
         echo"<br><br>";
     }
     ?></div>
-    
+</div> 
 
 <?php $titre="Exercice Moyen";
 $content=ob_get_clean();

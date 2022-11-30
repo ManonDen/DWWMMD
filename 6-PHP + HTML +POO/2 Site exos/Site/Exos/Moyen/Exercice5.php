@@ -12,20 +12,14 @@ class Animaux
         $this->age = $age;
         $this->type = $type;}
 
-    public function getnom()
-    {  return $this->nom;}
-    public function setnom($name)
-    {  $this->nom=$name;}
+    public function getnom(){ return $this->nom;}
+    public function setnom($name){  $this->nom=$name;}
 
-    public function getage()
-    {  return $this->age;}
-    public function setage($age)
-    {  $this->age=$age;}
+    public function getage(){  return $this->age;}
+    public function setage($age){  $this->age=$age;}
 
-    public function gettype()
-    {  return $this->type;}
-    public function settype($type)
-    {  $this->type=$type;}
+    public function gettype(){  return $this->type;}
+    public function settype($type){  $this->type=$type;}
 }
 
 

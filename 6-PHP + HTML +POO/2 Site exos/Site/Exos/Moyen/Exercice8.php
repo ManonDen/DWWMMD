@@ -99,9 +99,7 @@ $voitures = [$voiture1, $voiture2, $voiture3, $voiture4]; ?>
         <!-- Affichage de ce que l'utilisateur à selectionner dans le menu déroulant -->
         <p class="my-5"><?php
             foreach ($voitures as $voiture) {
-                if (isset($_POST[$voiture->getMarque()])) {
-                    afficheVoiture($voiture);
-                }
+                isset($_POST[$voiture->getMarque()])?afficheVoiture($voiture):"";   
             } ?>
         </p>
     </div>
