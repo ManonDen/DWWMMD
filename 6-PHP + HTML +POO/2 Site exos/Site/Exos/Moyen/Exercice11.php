@@ -1,8 +1,7 @@
 <?php
 ob_start();
 require "Fonctions.php";
-class Livre
-{
+class Livre{
     private $edition;
     private $auteur;
     private $nom;
@@ -16,43 +15,19 @@ class Livre
         $this->date = $date;
     }
 
-    public function getedition()
-    {
-        return $this->edition;
-    }
-    public function setedition($edition)
-    {
-        $this->edition = $edition;
-    }
+    public function getedition(){return $this->edition;}
+    public function setedition($edition){$this->edition = $edition;}
 
-    public function getnom()
-    {
-        return $this->nom;
-    }
-    public function setnom($nom)
-    {
-        $this->nom = $nom;
-    }
+    public function getnom(){return $this->nom;}
+    public function setnom($nom){$this->nom = $nom;}
 
-    public function getauteur()
-    {
-        return $this->auteur;
-    }
-    public function setauteur($auteur)
-    {
-        $this->auteur = $auteur;
-    }
+    public function getauteur(){return $this->auteur;}
+    public function setauteur($auteur){$this->auteur = $auteur;}
 
-    public function getdate()
-    {
-        return $this->date;
-    }
-    public function setdate($date)
-    {
-        $this->date = $date;
-    }
-    public function __toString()
-    {
+    public function getdate(){return $this->date;}
+    public function setdate($date){$this->date = $date;}
+    
+    public function __toString(){
         return"<br>Edition : " . $this->edition . "<br>Auteur : " . $this->auteur . "<br>Nom : " . $this->nom . "<br>Date de parution : " . $this->date . "<br>";
     }
 }
