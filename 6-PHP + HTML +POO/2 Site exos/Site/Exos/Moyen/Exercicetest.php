@@ -28,7 +28,7 @@ ob_start();
             echo "<b>Nom : </b>" . $this->nom . "<br/>";
             echo "<b>Taille : </b>" . $this->taille . "<br/>";
             echo "<b>Age : </b>" . $this->age . "<br/>";
-            echo "<b>Sexe : </b> : " ;
+            echo "<b>Sexe : </b>  " ;
             if($this->sexe){
                 echo "Homme <br/>";
             }else{

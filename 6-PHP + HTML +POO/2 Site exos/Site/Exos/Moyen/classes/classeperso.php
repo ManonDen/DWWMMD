@@ -10,7 +10,8 @@ class Personnages{
         $this->nom;
         $this->force;
         $this->pv;
-        $this->idarme;    }
+        $this->idarme;
+    }
 
     public function getNom(){return $this->nom;}
     public function getforce(){return $this->force;}

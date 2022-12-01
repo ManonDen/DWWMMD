@@ -1,5 +1,5 @@
 <?php ob_start();
-require "classmaison.php";
+require "classes/classmaison.php";
 ?>
 <h2>Exercice avec static id</h2>
 <table class="table">
