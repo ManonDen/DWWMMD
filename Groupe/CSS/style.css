@@ -1,0 +1,8 @@
+.perso{
+    background-image: url(../Image/Accueil-img/Bancfoot.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
