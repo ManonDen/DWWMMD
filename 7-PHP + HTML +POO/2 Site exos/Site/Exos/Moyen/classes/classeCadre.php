@@ -40,19 +40,20 @@ class Cadre extends Employe {
             "";
         }
    }
-
-   public function augmenteUnSalarie($emp,int $pourcentage){
-        return "<br>Il augmentera ".$emp->getNom()." de $pourcentage% passant de ".$emp->getSalaire()." à ".round($emp->getSalaire()+
-        ($emp->getSalaire()*($pourcentage/100)),2);
-   }
-
-    public function manage(){
+   public function manage(){
         $phrase=$this->prenom." ".$this->nom." manage : ";
         foreach($this->listeEmploye as $employe){
             $phrase.=$employe." - ";
         }
         return substr($phrase,0,-2) ;
     }
+
+   public function augmenteUnSalarie($emp,int $pourcentage){
+        return "<br>Il augmentera ".$emp->getNom()." de $pourcentage% passant de ".$emp->getSalaire()." à ".round($emp->getSalaire()+
+        ($emp->getSalaire()*($pourcentage/100)),2);
+   }
+
+    
 }
 
 

@@ -23,7 +23,7 @@
         <!-- Les menus déroulant -->
         <?php 
         // Dictionnaire des menus déroulant
-        $tab=array("Facile"=>[1,2],"Moyen"=>[1,2,3,4,5,6,7,8,9,10,11,"test",12,13,14],"Difficile"=>[1,2],"Arme"=>[]);
+        $tab=array("Facile"=>[1,2],"Moyen"=>[1,2,3,4,5,6,7,8,9,10,11,"test",12,13,14,15],"Difficile"=>[1,2],"Arme"=>[]);
 
         // Je parcous mes menus (facile, moyen...)
         foreach($tab as $key => $value):?>
