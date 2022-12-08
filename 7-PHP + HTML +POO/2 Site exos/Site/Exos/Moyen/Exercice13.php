@@ -3,49 +3,11 @@ require "classes/classeperso.php";
 require "classes/classearme.php";
 ?>
 <?php
-
-// Données armes
-$arme1 = new Armes();
-$arme1->setdegat(100);
-$arme1->setnom("Kung-Fu");
-
-$arme2 = new Armes();
-$arme2->setdegat(40);
-$arme2->setnom("Banane");
-
-$arme3 = new Armes();
-$arme3->setdegat(10);
-$arme3->setnom("Doudou");
-
-$armes = [$arme1, $arme2, $arme3];
-
-
-// Données persos
-$perso1 = new Personnages();
-$perso1->setnom("Nadou");
-$perso1->setforce(10);
-$perso1->setpv(100);
+// Ajouts des identifiants d'armes aux persos
 $perso1->setidarme($arme3->getidentifiant());
-
-$perso2 = new Personnages();
-$perso2->setnom("Stuart");
-$perso2->setforce(50);
-$perso2->setpv("6k");
 $perso2->setidarme($arme2->getidentifiant());
-
-$perso3 = new Personnages();
-$perso3->setnom("Bob");
-$perso3->setforce(20);
-$perso3->setpv("1k");
 $perso3->setidarme($arme3->getidentifiant());
-
-$perso4 = new Personnages();
-$perso4->setnom("Kevin");
-$perso4->setforce(80);
-$perso4->setpv("8k");
 $perso4->setidarme($arme1->getidentifiant());
-
-$persos = [$perso1, $perso2, $perso3, $perso4];
 ?>
 
 <!-- Affichage -->

@@ -24,3 +24,10 @@ Ensuite:Déroulé du stage
 Cahier des charges, création de bdd, (si pas de bdd passer directement aux) modules fait
 
 Ajouter projets perso à la fin
+
+Dossier Projet :
+- Rapport de stage de 35 pages minimum hors annexes
+
+Dossier Professionnel :
+- 4 projets Front
+- 4 projets Back
