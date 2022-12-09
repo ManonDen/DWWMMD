@@ -20,7 +20,7 @@ class LigneCommande{
     }
 
     public function affichage($prixttc,$produit){
-        echo "Libellé : ". $this->produit." Référence : ".$produit->getreference()." Prix TTC : ".$prixttc."\n";
+        echo "| Libellé : ". $this->produit." Référence : ".$produit->getreference()." Prix TTC : ".$prixttc."\n";
     }
 }
 ?>

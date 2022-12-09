@@ -1,8 +1,8 @@
 <?php
-require "./classes/classeProduit.php";
-require "./classes/classeLigneCommande.php";
-require "./classes/classeClient.php";
-require "./classes/classeCommande.php";
+require "../classes/classeProduit.php";
+require "../classes/classeLigneCommande.php";
+require "../classes/classeClient.php";
+require "../classes/classeCommande.php";
 
 $client1 = new Client("Neymar", "Jean", 1);
 $client2= new Client("Pavaday","kesary",2);
@@ -70,6 +70,7 @@ echo "\t\tDevis\nClient n°";
 foreach($clients as $client){
     if($client->getNom()==$n){
         echo $client->getNumeroClient()." : $n $p\n\n";
+        echo"\n-----------------------------------------------------\n\n";
     }
 }
 
