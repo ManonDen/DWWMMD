@@ -20,7 +20,8 @@ class LigneCommande{
     }
 
     public function affichage($prixttc,$produit){
-        echo "| Libellé : ". $this->produit." Référence : ".$produit->getreference()." Prix TTC : ".$prixttc."\n";
+        $phrase="| Libellé : %10s | Référence : %5s | Prix TTC : %10s |\n";
+        echo sprintf($phrase, $this->produit, $produit->getreference(),$prixttc);
     }
 }
 ?>

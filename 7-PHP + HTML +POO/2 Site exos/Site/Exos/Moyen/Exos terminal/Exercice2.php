@@ -1,7 +1,8 @@
 <?php
 require_once "../classes/classeTriangleRectangle.php";
-require_once "../classes/classeCercle.php";
+require_once "../classes/classesphere.php";
 require_once "../classes/classePave.php";
+require_once "../classes/classePyramide.php";
 
 echo("Rectangle : \n");
 $rectangle1=new Rectangle(5,10);
@@ -22,5 +23,13 @@ $cercle->AfficherCercle($cercle);
 echo("\n\nPave : ");
 $pave=new Pave(5,10,7);
 $pave->afficher($pave);
+
+echo("\n\nPyramide rectangulaire : ");
+$pyramide=new Pyramide(4,3,4);
+$pyramide->afficher($pyramide);
+
+echo("\n\nSphère : ");
+$sphere=new Sphere(8);
+$sphere->afficher($sphere);
 
 ?>

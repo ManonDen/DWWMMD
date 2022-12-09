@@ -1,7 +1,7 @@
 <?php
 class TriangleRectangle{
-    protected $base;
-    protected $hauteur;
+    private $base;
+    private $hauteur;
 
     public function __construct($base,$hauteur){
         $this->base=$base;

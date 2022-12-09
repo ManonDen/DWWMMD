@@ -57,7 +57,7 @@ for($i=0;$i<count($produits);$i++){
         $ListCommandes[$x]=$produitttc;
         $x++;
     }
-    echo"\n-----------------------------------------------------\n\n";
+    echo"\n--------------------------------------------------------------------\n";
 }
 
 $commandes=[];
@@ -66,11 +66,11 @@ if (count($ListCommandes)!=0){
     $commandes[$x]= new Commande($x,$n,$ListCommandes);
 }
 // Affichage toutes les lignes de commandes
-echo "\t\tDevis\nClient n°";
+echo "\t\tDevis\n--------------------------------------------------------------------\nClient n°";
 foreach($clients as $client){
     if($client->getNom()==$n){
-        echo $client->getNumeroClient()." : $n $p\n\n";
-        echo"\n-----------------------------------------------------\n\n";
+        echo $client->getNumeroClient()." : $n $p\n";
+        echo"\n--------------------------------------------------------------------\n\n";
     }
 }
 
@@ -80,5 +80,7 @@ for($i=0;$i<count($Lignescommandes);$i++){
 }
 
 // Affichage total
+echo"\n--------------------------------------------------------------------\n";
 $prixTotal=$commandes[$x]->calculTotalTTC();
 $commandes[$x]->affichageCommande($prixTotal);
+echo"\n--------------------------------------------------------------------\n";
