@@ -19,12 +19,12 @@ class Commande{
     public function getListeLigne(){return $this->listeligne;}
     public function setListeLigne($listeligne){$this->listeligne=$listeligne;}
 
-    public function affichageCommande(){
-
+    public function calculTotalTTC(){
+        return array_sum($this->listeligne) ;
     }
 
-    public function calculTotalTTC($commande){
-        $commande=
+    public function affichageCommande($prixtotal){
+        echo "Prix Total : ".$prixtotal;
     }
 }
 ?>

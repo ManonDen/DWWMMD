@@ -33,24 +33,30 @@ foreach($clients as $client){
 // Si le client n'est pas encore dans la base de données
 $x=count($clients);
 if ($bool==false){
-    $clients[$x]=new client($n,$p,$x);
+    $clients[$x]=new client($n,$p,$x+1);
 }
 
 echo"\n";
 $Lignescommandes=[];
 $ListCommandes=[];
+// On ajoute x pour quand l'utilisateur entre 0 en qte éviter de lentrer dans base de donnée
+$x=0;
 for($i=0;$i<count($produits);$i++){
     // Affiche infos produits
     $produits[$i]->afficherSesinfos();
-    // Demande ste utilisateur
+    // Demande qte utilisateur
     $qte=readline("Quantite : ");
+
     // si qte est differente de 0
-    // jajoute des lignes de la commande du client
-    $Lignescommandes[$i]=new LigneCommande($produits[$i]->getLibelle(),$qte);
-    // Calcul TTC par produit
-    $produitttc=$Lignescommandes[$i]->calculTotalLigneTTC($produits[$i]);
-    // J'ajoute les lignes de commandes à la liste de commande
-    $ListCommandes[$i]=$produitttc;
+    if ($qte!=0){
+        // jajoute des lignes de la commande du client
+        $Lignescommandes[$x]=new LigneCommande($produits[$i]->getLibelle(),$qte);
+        // Calcul TTC par produit
+        $produitttc=$Lignescommandes[$x]->calculTotalLigneTTC($produits[$i]);
+        // J'ajoute les lignes de commandes à la liste de commande
+        $ListCommandes[$x]=$produitttc;
+        $x++;
+    }
     echo"\n-----------------------------------------------------\n\n";
 }
 
@@ -60,12 +66,18 @@ if (count($ListCommandes)!=0){
     $commandes[$x]= new Commande($x,$n,$ListCommandes);
 }
 // Affichage toutes les lignes de commandes
-echo "\t\tDevis\n";
-for($i=0;$i<count($produits);$i++){
+echo "\t\tDevis\nClient n°";
+foreach($clients as $client){
+    if($client->getNom()==$n){
+        echo $client->getNumeroClient()." : $n $p\n\n";
+    }
+}
+
+// Affichage de tous les produits achetés avec le prix TTC
+for($i=0;$i<count($Lignescommandes);$i++){
     $Lignescommandes[$i]->affichage($ListCommandes[$i],$produits[$i]);
 }
 
 // Affichage total
-// $commandes->calculTotalTTC();
-
-?>
+$prixTotal=$commandes[$x]->calculTotalTTC();
+$commandes[$x]->affichageCommande($prixTotal);
