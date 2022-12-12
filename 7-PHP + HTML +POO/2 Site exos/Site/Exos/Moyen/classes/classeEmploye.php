@@ -36,22 +36,17 @@ class Employe{
    
 
     public function effectueSonJob(){
-         if($this->job=="soudeur"){
-            return "Le métier de soudeur consiste à souder des éléments métalliques.";
-         }
-         elseif($this->job=="assistant mecanicien"){
-            return "Le métier d'assitant mécanicien assister le mécanicien.";
-         }
-         elseif($this->job=="magasinier"){
-            return "Le métier de magasinier consiste a rangé des produits dans les rayons au sein d'un supermarché.";
-         }
-         elseif($this->job=="chef maintenance"){
-            return "Le métier de chef maintenance consiste a gérer des équipes.";
-         }
-         else{
-            "";
-         }
-    }
+      switch($this->job){
+          case "soudeur":
+              return "Le métier de soudeur consiste à souder des éléments métalliques.";
+          case "assistant mecanicien":
+              return "Le métier d'assitant mécanicien assister le mécanicien.";
+          case "magasinier":
+              return "Le métier de magasinier consiste a rangé des produits dans les rayons au sein d'un supermarché.";
+          case "chef maintenance":
+              return "Le métier de chef maintenance consiste a gérer des équipes.";
+      }
+   }
 }
 
 ?>

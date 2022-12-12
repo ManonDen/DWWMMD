@@ -1,8 +1,8 @@
 <?php
-require "../classes/classeProduit.php";
-require "../classes/classeLigneCommande.php";
-require "../classes/classeClient.php";
-require "../classes/classeCommande.php";
+require "../classes/exo1/classeProduit.php";
+require "../classes/exo1/classeLigneCommande.php";
+require "../classes/exo1/classeClient.php";
+require "../classes/exo1/classeCommande.php";
 
 $client1 = new Client("Neymar", "Jean", 1);
 $client2= new Client("Pavaday","kesary",2);
@@ -24,6 +24,7 @@ $produits = [$chocolat, $lait, $eau, $telephone, $pc, $livre, $steak, $pate, $ri
 $p=readline("Quel est votre prénom : ");
 $n=readline("Quel est votre nom : ");
 $bool=false;
+
 foreach($clients as $client){
     // Si le client est déjà dans la base de données
     if($p==$client->getPrenom() and $n==$client->getNom()){
@@ -65,6 +66,7 @@ $x=count($commandes);
 if (count($ListCommandes)!=0){
     $commandes[$x]= new Commande($x,$n,$ListCommandes);
 }
+
 // Affichage toutes les lignes de commandes
 echo "\t\tDevis\n--------------------------------------------------------------------\nClient n°";
 foreach($clients as $client){

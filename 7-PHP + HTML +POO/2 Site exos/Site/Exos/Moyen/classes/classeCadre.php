@@ -2,7 +2,7 @@
 require_once "classeEmploye.php";
 
 class Cadre extends Employe {
-    protected $listeEmploye;
+    private $listeEmploye;
 
     public function __construct(string $prenom,string $nom, string $num,float $salaire,string $job, array $liste)
     {
@@ -24,22 +24,18 @@ class Cadre extends Employe {
     }
 
     public function effectueSonJob(){
-        if($this->job=="soudeur"){
-           return "Le métier de soudeur consiste à souder des éléments métalliques.";
+        switch($this->job){
+            case "soudeur":
+                return "Le métier de soudeur consiste à souder des éléments métalliques.";
+            case "assistant mecanicien":
+                return "Le métier d'assitant mécanicien assister le mécanicien.";
+            case "magasinier":
+                return "Le métier de magasinier consiste a rangé des produits dans les rayons au sein d'un supermarché.";
+            case "chef maintenance":
+                return "Le métier de chef maintenance consiste a gérer des équipes.";
         }
-        elseif($this->job=="assistant mecanicien"){
-           return "Le métier d'assitant mécanicien assister le mécanicien.";
-        }
-        elseif($this->job=="magasinier"){
-           return "Le métier de magasinier consiste a rangé des produits dans les rayons au sein d'un supermarché.";
-        }
-        elseif($this->job=="chef maintenance"){
-           return "Le métier de chef maintenance consiste a gérer des équipes.";
-        }
-        else{
-            "";
-        }
-   }
+    }
+
    public function manage(){
         $phrase=$this->prenom." ".$this->nom." manage : ";
         foreach($this->listeEmploye as $employe){

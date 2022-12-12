@@ -1,5 +1,5 @@
 <?php
-require_once "../classes/classeRectangle.php";
+require_once "../classes/exo2/classeRectangle.php";
 
 class Pave extends Rectangle {
     private $hauteur;
@@ -17,9 +17,6 @@ class Pave extends Rectangle {
 
     public function getLargeur(){return $this->largeur;}
     public function setLargeur($largeur){$this->largeur=$largeur;}
-
-    public function Perimetre(){
-        return ($this->largeur+$this->longueur)*2;}
 
     public function Volume(){
         return $this->longueur*$this->hauteur*$this->largeur ;}

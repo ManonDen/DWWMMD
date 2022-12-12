@@ -1,5 +1,5 @@
 <?php
-require_once "../classes/classeCercle.php";
+require_once "../classes/exo2/classeCercle.php";
 
 class sphere extends Cercle{
 

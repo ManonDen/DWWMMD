@@ -1,8 +1,8 @@
 <?php
-require_once "../classes/classeTriangleRectangle.php";
-require_once "../classes/classesphere.php";
-require_once "../classes/classePave.php";
-require_once "../classes/classePyramide.php";
+require_once "../classes/exo2/classeTriangleRectangle.php";
+require_once "../classes/exo2/classesphere.php";
+require_once "../classes/exo2/classePave.php";
+require_once "../classes/exo2/classePyramide.php";
 
 echo("Rectangle : \n");
 $rectangle1=new Rectangle(5,10);
