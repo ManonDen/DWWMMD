@@ -1,8 +1,8 @@
 <?php
 require_once "../classes/exo3/Ideplacement.php";
 
-abstract class Humain implements Deplacement{
-    private $nom;
+abstract class Humain implements IDeplacement{
+    protected $nom;
 
     protected function __construct(string $nom){
         $this->nom=$nom;

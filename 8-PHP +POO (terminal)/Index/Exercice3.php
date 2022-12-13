@@ -1,12 +1,10 @@
 <?php 
-require_once "../classes/exo3/classeChasseur.php";
-require_once "../classes/exo3/classeLapin.php";
+require_once "../classes/exo3/Chasseur.class.php";
+require_once "../classes/exo3/Lapin.class.php";
 
-$lapin=new Lapin("gris",4,true);
+$lapin=new Lapin("gris",4);
 $chasseur=new chasseur("Vladimir","fusil");
 
-echo "Le lapin ".$lapin->getCouleur()." à ".$lapin->getnbpate()." pattes a été créer\n";
-echo "Le chasseur ".$chasseur->getNom()." a été créer avec un ".$chasseur->getArme()."\n";
 echo $lapin->seNourrir();
 
 while ($lapin->getEnvie()){
@@ -14,7 +12,7 @@ while ($lapin->getEnvie()){
     $lapin->crier();
     $chasseur->Chasser($chasseur,$lapin);
     if($lapin->getEnvie()){
-        $lapin->fuir($lapin);
+        $lapin->Deplacement();
     }
 }
 

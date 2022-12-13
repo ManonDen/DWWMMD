@@ -1,5 +1,5 @@
 <?php 
-interface Deplacement{
-    public function deplacement($deplacement);
+interface IDeplacement{
+    public function deplacement();
 }
 ?>

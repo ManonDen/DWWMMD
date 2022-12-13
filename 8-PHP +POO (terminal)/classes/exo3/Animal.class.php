@@ -1,9 +1,9 @@
 <?php
 require_once "../classes/exo3/Ideplacement.php";
 
-abstract class Animal implements Deplacement{
-    private $couleur;
-    private $nbpate;
+abstract class Animal implements IDeplacement{
+    protected $couleur;
+    protected $nbpate;
 
     protected function __construct(string $couleur,int $nbpate){
         $this->couleur=$couleur;
@@ -16,9 +16,9 @@ abstract class Animal implements Deplacement{
     public function getnbpate(){return $this->nbpate;}
     public function setnbpate($nbpate){$this->nbpate=$nbpate;}
 
-    public function deplacement($lapin){}
+    public function deplacement(){}
 
-    public function crier(){echo "Le lapin glapie de peur\n";}
+    public function crier(){}
 
 }
 ?>
