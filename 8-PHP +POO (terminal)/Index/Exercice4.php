@@ -11,9 +11,9 @@
     <?php
     require "../service/fonctions.php";
     spl_autoload_register('chargerClasse');
+    // Exo1
     $phrase= new ChainePlus("Programmation orientée objet en PHP");
-
-        ?>
+    ?>
 
     <div>
         <p><?= $phrase->gras() ?> </p>
@@ -21,6 +21,24 @@
         <p><?= $phrase->souligne() ?></p>
         <p><?= $phrase->majuscules() ?></p>
     </div>
+    <!-- exo2 -->
+    <div>
+        <?php $form= new Form();
+        $form->getForm();
+    // exo3
+        $form2= new Form2();
+        $form2->getForm(); ?>
+    </div>
+
+    <!-- exo4 -->
+    <?php $client1= new Client("Denolf",'Manon',"6 rue Bonduelle,59153,gfp");
+    $client1->setCoord();
+
+    echo "<br>Election : ";
+    $electeur1=new Electeur("Benyamina","Nadia",3,false);
+    $electeur1->avoter();
+    print_r($electeur1);
+    ?>
 
 </body>
 </html>
