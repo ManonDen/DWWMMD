@@ -31,7 +31,7 @@
     </div>
 
     <!-- exo4 -->
-    <?php $client1= new Client("Denolf",'Manon',"6 rue Bonduelle,59153,gfp");
+    <?php $client1= new Client("Denolf",'Manon',"666 rue Satanique,66666,Enfer");
     $client1->setCoord();
 
     echo "<br>Election : ";
