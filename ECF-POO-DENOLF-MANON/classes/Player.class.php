@@ -39,11 +39,12 @@ Saisir 4 pour aller à l'Ouest\n";
         switch($choix){
             case 0:
                 break;
+
             case 1 or 2 or 3 or 4:
                 $nb=rand(1,6);
                 // si le nombre est 1 ou 2, alors le joueur tombe sur le manchot, sinon sur un monstre
                 return ($nb==1 or $nb==2) ?"Manchot":"Monstre";
-                break;
+
         }
 
     }
