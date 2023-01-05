@@ -1,0 +1,24 @@
+1)
+select *
+from personnage inner join classe on classe.idClasse=personnage.idClasse
+
+select nom,levelMin,degat,libelle,estDistance
+from arme inner join typearme on typearme.idTypeArme=arme.idTypeArme
+
+2)
+select personnage.nom,classe.nom
+from personnage inner join classe on classe.idClasse=personnage.idClasse
+
+select personnage.nom as "Nom du personnage",classe.nom as "Classe"
+from personnage inner join classe on classe.idClasse=personnage.idClasse
+
+select personnage.nom as "Nom du personnage",arme.nom as "Nom de l'arme"
+from personnage inner join arme on arme.idArme=personnage.idArmeUtilise
+
+select personnage.nom as "Nom du personnage",arme.nom as "Nom de l'arme",levelMin,degat,libelle,estDistance
+from (personnage inner join arme on arme.idArme=personnage.idArmeUtilise)INNER JOIN typearme ON arme.idTypeArme=typearme.idTypeArme
+
+if clone_pos == width-1 or clone_pos==0:
+                print("BLOCK")
+            else:
+                print("WAIT")

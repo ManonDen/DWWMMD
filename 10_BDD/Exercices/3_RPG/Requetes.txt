@@ -55,3 +55,100 @@ FROM classe;
 SELECT *
 FROM arme
 WHERE levelMin>=5;
+
+SELECT *
+FROM arme
+WHERE degat<25
+
+SELECT nom,surnom
+FROM personnage
+WHERE level=10
+
+SELECT *
+FROM typearme
+WHERE estDistance
+
+5)
+SELECT * 
+FROM arme
+WHERE levelMin BETWEEN 4 AND 8
+
+SELECT * 
+FROM personnage
+WHERE idPersonnage<3 AND level=10
+
+SELECT *
+FROM arme
+WHERE levelMin<=3 OR levelMin>=8 (on peut mettre WHERE levelMin NOT BETWEEN 3 AND 8)
+
+SELECT *
+FROM arme
+WHERE idArme BETWEEN 1 AND 2 AND degat>30 (on peut aussi mettre aussi WHERE idArme=1 AND idArme=2 AND degat>30)
+
+SELECT *
+FROM arme
+WHERE degat BETWEEN 25 AND 40 AND idArme BETWEEN 1 AND 2 (on peut mettre <=2)
+
+SELECT *
+FROM personnage
+WHERE level<> 8 AND (level>7 OR level<6)
+
+SELECT count(*) as "Nb personnage sans level 10 "
+FROM personnage
+WHERE level<>10
+
+SELECT ROUND(AVG(degat),2)
+FROM arme
+WHERE levelMin BETWEEN 3 AND 7
+
+6)
+SELECT *
+FROM personnage
+WHERE nom LIKE "l%"
+
+SELECT *
+FROM personnage
+WHERE nom LIKE "l%er"
+
+SELECT *
+FROM arme
+WHERE nom LIKE "%bois%"
+
+SELECT *
+FROM arme
+WHERE nom LIKE "A_b%"
+
+SELECT *
+FROM arme
+WHERE idArme IN(1,2,4,5,7)
+(ou le faire avec un limit)
+
+----------------------------------------------
+SELECT *
+FROM personnage
+WHERE idPersonnage<>5 AND level=10
+LIMIT 1,4
+
+OU
+
+SELECT *
+FROM personnage
+WHERE idPersonnage IN(2,3,4,6) AND level=10
+
+----------------------------------------------
+
+SELECT *
+FROM personnage
+WHERE surnom IS NOT NULL
+
+SELECT *
+FROM personnage
+WHERE surnom IS NULL
+
+SELECT *
+FROM personnage
+LIMIT 3
+
+SELECT *
+FROM personnage
+LIMIT 3,2
