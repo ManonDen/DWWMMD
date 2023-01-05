@@ -1,0 +1,57 @@
+BASES DE REQUETE
+
+1)
+SELECT * FROM personnage
+
+SELECT * FROM arme
+
+SELECT nom, levelMin
+FROM arme
+
+SELECT nom,surnom,level
+FROM personnage
+
+SELECT nom as "Pseudo" ,level as "Niveau"
+FROM personnage
+
+SELECT libelle as "Types d'armes du jeu"
+FROM typearme
+
+
+
+2)
+SELECT count(*) as "Nombre d'armes"
+FROM typearme
+
+SELECT count(*) as "Nombre de personnage"
+FROM personnage
+
+SELECT ROUND(AVG(level),2) as "Moyenne des niveaux"
+FROM personnage
+
+SELECT SUM(baseForce) as "Somme force",SUM(baseAgi) as "Somme agilité",SUM(baseIntel) as "Somme intelligence"
+FROM classe
+
+SELECT min(levelMin) as "Level min",max(levelMin) as "Level max"
+FROM arme
+
+SELECT SUM(baseForce+baseAgi+baseIntel) as "Somme caractéristiques"
+FROM classe
+
+3)
+
+SELECT CONCAT(nom," ",surnom) FROM personnage;
+
+SELECT CONCAT(nom," ",baseForce," ",baseAgi," ",baseIntel) as "Caractéristiques des armes"
+FROM classe
+
+SELECT SUBSTR(nom,1,6) as "6 premiers lettres des noms" 
+FROM personnage; 
+
+SELECT CONCAT(LEFT(nom,5)," ",LEFT(description,20))
+FROM classe; 
+
+4)
+SELECT *
+FROM arme
+WHERE levelMin>=5;
