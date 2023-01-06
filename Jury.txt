@@ -1,0 +1,145 @@
+												JURY
+										
+
+
+											Page 5 de referentiel de compétences
+
+1) Maquette (ressemblant à gestion des notes - diagramme de flux)
+2) Web statisque et dynamique -> crée site
+3) Web dynamique -> relier base de donnée
+
+
+
+											DOSSIER PROFFESIONNELLE  : (35 pages hors annexes)
+
+
+- 4 projets fronts/4 projets back (mettre du CRUD en PHO-POO-PDO)
+- mettre ce qu'on a reussi
+- répondre question (capture ecran, réponses)
+
+Dans les annexes mettres, projets perso
+
+
+
+											DOSSIER PROJET -> c'est le rapport de stage: (30 pages)
+
+
+-Page de garde :
+	millieu:
+	-logo de lentreprise
+	-choisir thème sans changement
+	-nom/prenom
+	-date de stage
+
+	bas gauche:
+	- mettre afci
+
+-sommaire
+
+-remerciement
+
+-Présentation entreprise:
+	-date création
+	-nom PDG
+	-histoire
+	-on amène tous doucement le projet
+
+-Maquette OBLIGATOIRE (ressemblant à gestion des notes - diagramme de flux)
+
+-BDD : OBLIGATOIRE
+	- MCD (On dit qu'on a utiliser JMerise)
+	- MLD (On dit qu'on a utiliser JMerise)
+	- Script de création BDD (Import dans PHPMyAdmin)
+	- Script d'insertion des données (Import dans PHPMyAdmin)
+
+-Site e-commerce (Réaliser interface utilisateur avec solution de gestion contenu ou e-commerce)
+
+-CRUD (Développer les composants d’accès aux données):
+	- Expliquer code de A à Z
+Par exemple sentrainer à faire to do list
+
+-API (pas obligatoire -> juste faire des recherche)
+
+-Site internet anglosaxon :
+(Mettre infos d'un site de code anglais -> traduit explication code 
+mettre version code anglais   ->  mettre ma version code)
+
+
+											ORAL
+
+
+
+
+
+											PRESENTATION PROJET REALISER STAGE: (35 min)
+
+
+Faire diapo avec powerpoint (Faire F5 pour mettre Note que le jury ne verra pas)
+
+diapo:
+
+1er diapo : sommaire :
+	- se presenter
+	- entreprise (contexte)
+	- dossierprojet
+	- conclusion
+
+2ème diapo: (se presenter)
+		-je mappelle, j'ai fais ça avant....
+		-pk je fais cette formation
+
+3ème diapo : (entreprise)
+	- fais son stage dans tel entreprise
+	-nom tuteur
+	-comment ça sest passé
+	-durée du stage
+
+4ème diapo : (dossier projet)
+	-prendre point important
+	-maquette faire capture écran et expliquer (voir point 1 dessous)
+	-bdd
+	-site web
+	-crud
+	-API
+
+
+1) Maquette OBLIGATOIRE (ressemblant à gestion des notes - diagramme de flux)
+
+2) BDD : OBLIGATOIRE
+	- MCD (On dit qu'on a utiliser JMerise) -> expliquer cardinalité
+	- MLD (On dit qu'on a utiliser JMerise)
+	- Script de création BDD (Import dans PHPMyAdmin)
+	- Script d'insertion des données (Import dans PHPMyAdmin)
+
+3) Site e-commerce (Réaliser interface utilisateur avec solution de gestion contenu ou e-commerce)
+
+
+4) CRUD (Développer les composants d’accès aux données):
+	- Expliquer code de A à Z
+Par exemple sentrainer à faire to do list
+
+5) API (pas obligatoire -> juste faire des recherche)
+
+
+Source)  Pour chaque logiciel dire lien et version, expliquer comment installer logiciel (pas dire installation de vstudio et laragon)
+faire pour symfony-react-
+
+
+
+ATTTTENTIOOOOON
+
+Si dans notre entreprise on fait pas de BDD ou  CRUD pdt stage, on utilise ce qu'on a fait ici en formation avec un lien logique avec stage. 
+
+
+
+5ème diapo : conclusion 
+
+
+
+
+
+											ENTRETIEN TECHNIQUE : (40 min) questions
+
+
+										ENTRETIEN FINAL : (15 min) dossier proffesionnel -> présenter projet profesionnel
+
