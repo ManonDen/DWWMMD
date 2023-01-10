@@ -16,12 +16,77 @@ select p.nom as "Nom personnage",c.nom as "Classe"
 from personnage p 
 inner join classe c on c.idClasse=p.idClasse
 
-select p.nom as "Nom du personnage",a.nom as "Nom de l'arme"
+select *
 from personnage p
-inner join arme a on a.idArme=p.idArmeUtilise
+inner join arme a on a.idArme=p.idArmeUtilise 
 
-select personnage.nom as "Nom du personnage",arme.nom as "Nom de l'arme",levelMin,degat,libelle,estDistance
-from (personnage 
-inner join arme on arme.idArme=personnage.idArmeUtilise)
+SELECT personnage.nom AS Pseudo, arme.nom AS Weapon, levelMin , degat, libelle, estDistance
+FROM personnage 
+INNER JOIN arme ON personnage.idArmeUtilise = arme.idArme
+INNER JOIN typearme ON arme.idTypeArme = typearme.idTypeArme
+
+3)
+SELECT personnage.nom,LEVEL,arme.nom,levelMin
+from personnage 
+INNER JOIN dispose on personnage.idPersonnage=dispose.idPersonnage
+inner join arme on dispose.idArme=arme.idArme
 INNER JOIN typearme ON arme.idTypeArme=typearme.idTypeArme
 
+SELECT nom,levelMin,degat,libelle
+FROM arme 
+INNER JOIN typearme ON arme.idTypeArme=typearme.idTypeArme
+WHERE estDistance=false
+
+SELECT *
+FROM personnage p
+INNER JOIN dispose d ON p.idPersonnage=d.idPersonnage
+INNER JOIN arme a ON a.idArme=d.idArme
+INNER JOIN typearme ta ON a.idTypeArme=ta.idTypeArme
+WHERE p.idClasse=1
+
+4)
+SELECT p.idPersonnage,p.nom,a.*,ta.*
+from personnage p
+INNER JOIN dispose d on p.idPersonnage=d.idPersonnage
+inner join arme a on d.idArme=a.idArme
+inner join typearme ta ON a.idTypeArme=ta.idTypeArme
+WHERE p.level=10
+
+SELECT *
+from personnage p
+INNER JOIN dispose d on p.idPersonnage=d.idPersonnage
+inner join arme a on d.idArme=a.idArme
+WHERE p.level=10
+ORDER BY p.idPersonnage ASC
+
+SELECT ROUND(avg(degat),2)
+from typearme ta 
+INNER JOIN arme a ON ta.idTypeArme=a.idTypeArme
+WHERE estDistance
+
+SELECT *
+from personnage p
+INNER JOIN dispose d on p.idPersonnage=d.idPersonnage
+inner join arme a on d.idArme=a.idArme
+inner join typearme ta ON a.idTypeArme=ta.idTypeArme
+WHERE libelle LIKE "a%"
+
+5)
+SELECT *
+from typearme a 
+left join arme ta ON a.idTypeArme=ta.idTypeArme
+
+SELECT *
+from arme a 
+right join typearme ta ON a.idTypeArme=ta.idTypeArme
+
+SELECT a.nom,p.nom,levelMin
+from personnage p
+right join arme a on p.idArmeUtilise=a.idArme
+ORDER BY levelMin
+
+SELECT a.nom,p.nom
+from personnage p
+RIGHT JOIN dispose d on p.idPersonnage=d.idPersonnage
+RIGHT join arme a on d.idArme=a.idArme
+ORDER BY a.nom
